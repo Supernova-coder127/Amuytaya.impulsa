@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amuyt'aya.impulsa</title>
 
-
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-950 text-white min-h-screen">
 <header class="w-full bg-purple-950/60 backdrop-blur-md px-6 py-4 flex items-center justify-between border-b border-purple-500/20">
-
 
   <div class="flex items-center space-x-3">
     <img src="Logoproject.jpg" alt="logo" class="w-9 h-9 rounded-full object-cover border border-purple-300/40">
@@ -21,7 +19,6 @@
 <section class= "w-full min-h-[420px] p-8 flex flex-col justify-between"
  style="background: linear-gradient(173deg, #6D28D9 0%, #6D28D9 45%, #0F1016 45%, #0F1016 100%);">
 
-
     <div class="space-y-3">
       <span class="inline-block px-3 py-1 rounded-full text-xs font-bold" style="background-color: #38BDF8; color: #000;">
         ODS 4 Educación de Calidad
@@ -31,12 +28,15 @@
         Hagamos que el acceso a la información educativa sea más fácil para todos.</p>
     </div>
 
-
 <div class="pt-16 max-w-xl space-y-4">
     <h3 class="text-xl font-bold text-white">¿Qué es Amuyt'aya.impulsa?</h3>
     <p class="text-sm text-slate-300 leading-relaxed">Un proyecto nacido de la convicción de que el lugar de donde vienes no debería determinar las oportunidades que llegas a descubrir.</p>
     <button onclick="openModal()"class="px-5 py-2.5 rounded-xl font-bold text-sm shadow-lg" style="background-color: #38BDF8; color: #000;">Descubre Becas
-    </button></div></section>
+    </button>
+  <button onclick="openCommunitiesModal()" class="px-5 py-2.5 rounded-xl font-bold text-sm shadow-lg transition hover:opacity-90" style="background-color: #38BDF8; color: #000;">
+    Comunidades e Iniciativas
+  </button></div>
+</div></section>
  
   <section class="bg-slate-900 px-6 py16 border-t border-purple-500/10">
     <div class="max-w-4xl mx-auto">
@@ -56,6 +56,31 @@
     </div>
   </section>
 
+<section class="bg-slate-950 px-6 py-16 border-t border-purple-500/10">
+  <div class="max-w-4xl mx-auto">
+    <p class="text-purple-400 text-sm font-bold tracking-widest uppercase mb-3">REDES Y PROGRAMAS</p>
+    <h2 class="text-3xl font-bold text-white mb-4">Comunidades e Iniciativas Impulsoras</h2>
+    <p class="text-slate-300 leading-relaxed mb-8">Espacios, campamentos y organizaciones que conectan a estudiantes nacionales e internaciones con tecnología, ciencia y liderazgo internacional.</p>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <article class="p-5 bg-slate-900 rounded-2xl border border-slate-800 hover:border-purple-500/50 transition">
+      <h3 class="text-lg font-bold text-sky-400 mb-2">Hack Club</h3>
+      <p class="text-xs text-slate-300 leading-relaxed mb-4">Red global liderada por estudiantes para aprender a programar construyendo proyectos reales y hardware.</p>
+      <a href="https://hackclub.com" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-purple-400 hover:text-purple-300 transition">Saber más &rarr;</a>
+    </article>
+
+    <article class="p-5 bg-slate-900 rounded-2xl border border-slate-800 hover:border-purple-500/50 transition">
+      <h3 class="text-lg font-bold text-sky-400 mb-2">LALA (Latin American Leadership Academy)</h3>
+      <p class="text-xs text-slate-300 leading-relaxed mb-4">Campamentos intensivos de liderazgo e impacto social para jóvenes destacados de Latinoamérica.</p>
+      <a href="https://latinamericaleadership.org" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-purple-400 hover:text-purple-300 transition">Saber más &rarr;</a>
+    </article>
+
+    <article class="p-5 bg-slate-900 rounded-2xl border border-slate-800 hover:border-purple-500/50 transition">
+      <h3 class="text-lg font-bold text-sky-400 mb-2">Clubes de Ciencia Perú</h3>
+      <p class="text-xs text-slate-300 leading-relaxed mb-4">Talleres intensivos que conectan a estudiantes con investigadores de universidades prestigiosas.</p>
+      <a href="https://clubesdecienciaperu.org" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-purple-400 hover:text-purple-300 transition">Saber más &rarr;</a>
+    </article>
+  </div></div>
+</section>
 
 <div id="scholarshipModal" class="fixed inset-0 bg-black/75 backdrop-blur-sm hidden items-center justify-center p-4 z-50" role="dialog" aria-modal="true" aria-labelledby="modalTitle" onclick="if(event.target === this) closeModal()">
 <div class="bg-slate-900 border border-purple-500/30 rounded-2xl max-w-lg w-full p-6 space-y-4 shadow-2xl relative">
@@ -72,7 +97,7 @@
       <article class="p-4 bg-slate-800/80 rounded-xl border border-slate-700">
         <h3 class="font-bold">
         <a href="https://www.viabcp.com/becasbcp" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 transition-colors">Beca BCP</a>
-        </h3>
+        </h3> 
         <p class="text-xs text-slate-300 mt-1">Apoyo económico y mentoría para jóvenes con talento que buscan acceder a la esducación superior. ESTADO: abierta</p>
         </article>
         <article class="p-4 bg-slate-800/80 rounded-xl border border-slate-700">
@@ -92,7 +117,7 @@
           <a href="https://cayetano.edu.pe/" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 transition-colors">Beca Enrique Fernández Enríquez (UPCH)</a>
           </h3>
           <p class="text-xs text-slate-300 mt-1">Beca de estímulo académico para estudiantes con excelencia en ciencias de la salud en la UPCH. ESTADO: cerrada</p>
-         
+          
       </article>
     </div>
     <div class="flex justify-end pt-2">
@@ -101,12 +126,46 @@
   </div>
 </div>
 
+<div id="communitiesModal" class="fixed inset-0 bg-black/75 backdrop-blur-sm hidden items-center justify-center p-4 z-50" role="dialog" aria-modal="true" onclick="if(event.target === this) closeCommunitiesModal()">
+  <div class="bg-slate-900 border border-purple-500/30 rounded-2xl max-w-lg w-full p-6 space-y-4 shadow-2xl relative">
+    <button onclick="closeCommunitiesModal()" aria-label="Close window" class="absolute top-4 right-4 text-slate-400 hover:text-white font-bold text-xl">&times;</button>
+    <h2 class="text-2xl font-bold text-purple-300 pr-8">Comunidades Destacadas</h2>
+    <p class="text-sm text-slate-300 leading-relaxed">Explora estas organizaciones para hacer networking, aprender programación, desarrollo de liderazgo y ciencia.</p>
+    
+    <div class="space-y-3 pt-2">
+      <article class="p-4 bg-slate-800/80 rounded-xl border border-slate-700">
+        <h3 class="font-bold">
+          <a href="https://hackclub.com" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 transition-colors">Hack Club</a>
+        </h3>
+        <p class="text-xs text-slate-300 mt-1">Comunidad global de jóvenes programadores con subvenciones para proyectos, clubes locales y eventos.</p>
+      </article>
+
+      <article class="p-4 bg-slate-800/80 rounded-xl border border-slate-700">
+        <h3 class="font-bold">
+          <a href="https://latinamericaleadership.org" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 transition-colors">LALA (Latin American Leadership Academy)</a>
+        </h3>
+        <p class="text-xs text-slate-300 mt-1">Busca e impulsa a los jóvenes líderes más prometedores de Latinoamérica mediante bootcamps e impacto social.</p>
+      </article>
+
+      <article class="p-4 bg-slate-800/80 rounded-xl border border-slate-700">
+        <h3 class="font-bold">
+          <a href="https://clubesdecienciaperu.org" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 transition-colors">Clubes de Ciencia Perú</a>
+        </h3>
+        <p class="text-xs text-slate-300 mt-1">Cursos intensivos e inmersión STEM dictados por investigadores de prestigiosas universidades globales.</p>
+      </article>
+    </div>
+
+    <div class="flex justify-end pt-2">
+      <button onclick="closeCommunitiesModal()" class="px-5 py-2 bg-purple-600 hover:bg-purple-700 text-white text-sm font-bold rounded-xl transition">Cerrar</button>
+    </div>
+  </div>
+</div>
 
 <footer class="w-full bg-slate-900 border-t border-slate-800 py-6 px-6 text-center space-y-3 mt-auto">
   <div class="flex justify-center space-x-6 text-sm text-slate-400">
-    <a href="https://www.instagram.com/amuytaya.impulsa?utm_source=ig_web_button_share_sheet&rpxt=ZDNlZDc0MzIxNw== target='_blank" class="hover:text-sky-400 transition">Instagram</a>
+    <a href="https://www.instagram.com/amuytaya.impulsa?utm_source=ig_web_button_share_sheet&rpxt=ZDNlZDc0MzIxNw==" target="_blank" class="hover:text-sky-400 transition">Instagram</a>
   </div>
-  <p class="text-xs text-slate-500">© 2026 Amuyt'aya.impulsa - Supporting SDG 4 Quality Education and SDG 10 Reduced Inegualities</p>
+  <p class="text-xs text-slate-500">© 2026 Amuyt'aya.impulsa - Supporting SDG 4 Quality Education and SDG 10 Reduced Inequalities</p>
 </footer>
 <script>
   function openModal() {
@@ -115,9 +174,20 @@
     modal.classList.add('flex');
   }
 
-
   function closeModal() {
     const modal= document.getElementById('scholarshipModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  function openCommunitiesModal() {
+    const modal = document.getElementById('communitiesModal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeCommunitiesModal() {
+    const modal = document.getElementById('communitiesModal');
     modal.classList.add('hidden');
     modal.classList.remove('flex');
   }
